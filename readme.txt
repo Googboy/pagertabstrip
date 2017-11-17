@@ -1,0 +1,5 @@
+今天做的是标题栏pagertabstrip，可以通过左右滑动展现不同的界面，也可以通过点击pagertabstrip控件实现页面的转换。
+还有就是后来为控件添加了背景图片，修改了字体的背景颜色，以便于分别不同的页面。
+今天碰到的错误是前面2个界面可以正常显示，当点击第3个界面的时候就会报错，程序停止运行。
+错误信息为：java.lang.UnsupportedOperationException: Required method destroyItem was not overridden
+从错误信息来看是缺少destroyItem方法没有被覆盖，就是说缺少这个方法，添加上去这个方法就可以了
